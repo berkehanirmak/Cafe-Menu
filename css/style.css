@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: crimson;
+}
+
+.site-header {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    align-items: center;
+    margin-top: 30px;
+    width: 50%;
+    border-radius: 100px;
+    text-align: center;
+    margin-left: 25%;
+   
+}
+
+.has-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin-right: 30px;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;  
+    
+}
+
+.main-nav li {
+    display: inline-block;
+    
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 20px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.box {
+    position: relative;
+    width: 27%;
+    margin-bottom: 40px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    text-align: center;
+    overflow: hidden; /* Kutucuğun içeriği dışına taşmasını engelle */
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover; /* Resmi tam doldur */
+    object-position: center center; /* Resmin pozisyonunu ayarla */
+    transition: filter 0.3s ease-out; 
+}
+
+.box p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: transparent; 
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease-in; /* Yazının renk değişim efekti için geçiş efekti ekle */
+}
+
+.box:hover img {
+    filter: brightness(20%);
+}
+
+.box:hover p {
+    color: #fff; 
+}
+
+
+/* Nirvana Sayfalar */
+
+
+
+
+.baslik {
+    background-color: crimson;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+}
+
+.baslik img {
+    max-width: 40%;
+    display: block;
+margin-left: 30%;    
+margin-top: 40px;
+    border-radius: 45px;
+}
+
+.kategoriler {
+    text-align: center; /* Alt kategorileri merkezlemek için */
+    
+}
+
+.alt-kategoriler {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 20px;
+    margin-left: 24%;
+    padding: 15px;
+    background-color: #ecf0f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+
+.alt-kategoriler h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.alt-kategoriler p {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* kullanıcı sözleşmesi */
+
+
+.metin-kutusu {
+    width: 80%;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.metin-kutusu p {
+    color: #555;
+}
+
+.metin-kutusu h1, .metin-kutusu p {
+    text-align: justify;
+}
+
+.metin-kutusu p {
+    margin-bottom: 10px;
+}
+
+.metin-kutusu h1, .metin-kutusu p {
+    border-radius: 5px;
+}
+
+.metin-kutusu h1 {
+    background-color: #00000083;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Hakkımızda */
+
+.about-us {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*Form*/
+.child_contact {
+    max-width: 600px;
+    margin: 20px auto;
+    margin-top: 10%;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.child_contact h3 {
+    text-align: center;
+    color: #333;
+}
+
+input,
+textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+
+/*Footer*/
+.footer {
+    background-color: #ccc;
+    color: #000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 30px;
+    color: #180666;
+}
