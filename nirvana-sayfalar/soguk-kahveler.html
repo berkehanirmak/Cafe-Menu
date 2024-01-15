@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soğuk Kahveler</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/oneri.css">
+    <link rel="shortcut icon" href="../img/pp.jpeg" type="image/x-png">   
 
 </head>
 <body>
@@ -22,37 +24,67 @@
 </div>
 
 
+<div class="oneri">
+    <h3>Günün Soğuk Kahve Önerisi</h3>
+    <button id="OneriBtn" onclick="rastgeleSogukKahveOnerisi()">Soğuk Kahve Önerisi Al</button>
+    <p id="sogukKahveOnerisi"></p>
+</div>
+
+<script src="../js/oneri.js"></script>
+
 <div class="kategoriler">
     <div class="alt-kategoriler">
         <h2>Ice Evreka</h2> 
+        <div class="rating" onclick="oyla(this, 'Ice Evreka')">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+        </div>
         <p>105 ₺</p>   
    </div>
    <div class="alt-kategoriler">
     <h2>Ice Americano</h2> 
-    <p>85 ₺</p>   
+    <div class="rating" onclick="oyla(this, 'Ice Americano')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
+    <p>85 ₺</p>  
+     
 </div>
 <div class="alt-kategoriler">
     <h2>Ice Latte</h2> 
+    <div class="rating" onclick="oyla(this, 'Ice Latte')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>90 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Ice Zebra Mocha</h2> 
+    <div class="rating" onclick="oyla(this, 'Ice Zebra Mocha')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>105 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Ice Mocha</h2> 
+    <div class="rating" onclick="oyla(this, 'Ice Mocha')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>105 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Ice White Mocha</h2> 
+    <div class="rating" onclick="oyla(this, 'Ice White Mocha')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>105 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Ice Karamel Mocha</h2> 
+    <div class="rating" onclick="oyla(this, 'Ice Karamel Mocha')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>105 ₺</p>   
 </div>
 </div>
-    
+<script src="../js/rating.js"></script>
 
 <!-- FORM -->
 <div class="child_contact">
@@ -73,7 +105,6 @@
     <div class="social-icons">
         <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-        <!-- Diğer sosyal medya bağlantılarını ekleyebilirsiniz -->
     </div>
     <p>&copy; 2023 Cafe Nirvana. Tüm hakları saklıdır.</p>
 </div>

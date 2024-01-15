@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Türk Kahveleri</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/oneri.css">
+    <link rel="shortcut icon" href="../img/pp.jpeg" type="image/x-png">   
 
 </head>
 <body>
@@ -22,34 +24,63 @@
 </div>
 
 
+
+<div class="oneri">
+    <h3>Günün Türk Kahvesi Önerisi</h3>
+    <button id="OneriBtn" onclick="rastgeleTurkKahvesiOneri()">Türk Kahvesi Önerisi Al</button>
+    <p id="turkKahvesiOnerisi"></p>
+</div>
+<script src="../js/oneri.js"></script>
+
+
+
 <div class="kategoriler">
     <div class="alt-kategoriler">
         <h2>Damla Sakızlı Türk Kahvesi</h2> 
+        <div class="rating" onclick="oyla(this, 'Damla Sakızlı Türk Kahvesi')">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+        </div>
         <p>65 ₺</p>   
    </div>
    <div class="alt-kategoriler">
     <h2>Dağ Çilekli Türk Kahvesi</h2> 
+    <div class="rating" onclick="oyla(this, 'Dağ Çilekli Türk Kahvesi')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>65 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Çikolatalı Türk Kahvesi</h2> 
+    <div class="rating" onclick="oyla(this, 'Çikolatalı Türk Kahvesi')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>65 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Menengiç Kahvesi</h2> 
+    <div class="rating" onclick="oyla(this, 'Menengiç Kahvesi')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>65 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Dibek Kahvesi</h2> 
+    <div class="rating" onclick="oyla(this, 'Dibek Kahvesi')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>65 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Kervansaray Kahvesi</h2> 
+    <div class="rating" onclick="oyla(this, 'Kervansaray Kahvesi')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>65 ₺</p>   
 </div>
 
 </div>
-    
+<script src="../js/rating.js"></script>
+
 
 <!-- FORM -->
 <div class="child_contact">
@@ -70,7 +101,6 @@
     <div class="social-icons">
         <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-        <!-- Diğer sosyal medya bağlantılarını ekleyebilirsiniz -->
     </div>
     <p>&copy; 2023 Cafe Nirvana. Tüm hakları saklıdır.</p>
 </div>

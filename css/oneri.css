@@ -1,0 +1,39 @@
+.oneri {
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.oneri h3 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.oneri p {
+    font-size: 1.2em;
+    color: #777;
+}
+
+#OneriBtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+#OneriBtn:hover {
+    background-color: #45a049;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+#OneriBtn:active {
+    background-color: #398439;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: scale(0.95);
+}

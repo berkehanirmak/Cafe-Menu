@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Çaylar</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/oneri.css">
+    <link rel="shortcut icon" href="../img/pp.jpeg" type="image/x-png">   
 
 </head>
 <body>
@@ -13,7 +15,8 @@
         <nav class="main-nav">
             <ul>
                 <li><a href="../index.html">Anasayfa</a></li>
-                <li><a href="#contactForm">İletişim</a></li>            </ul>
+                <li><a href="#contactForm">İletişim</a></li>            
+            </ul>
         </nav>
     </header>
 
@@ -21,46 +24,85 @@
     <img src="../img/caylar.jpg" alt="">
 </div>
 
+<div class="oneri">
+    <h3>Günün Çay Önerisi</h3>
+    <button id="OneriBtn" onclick="rastgeleCayOnerisi()">Çay Önerisi Al</button>
+
+    <p id="cayOnerisi"></p>
+</div>
+
+
+<script src="../js/oneri.js"></script>
+
+
 
 <div class="kategoriler">
     <div class="alt-kategoriler">
         <h2>Kuşburnu Ada Çayı</h2> 
+        <div class="rating" onclick="oyla(this, 'Kuşburnu Ada Çayı')">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+        </div>
         <p>75 ₺</p>   
    </div>
    <div class="alt-kategoriler">
    <h2>Çay</h2> 
+   <div class="rating" onclick="oyla(this, 'Çay')">
+    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+</div>
     <p>25 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Fincan Çay</h2> 
+    <div class="rating" onclick="oyla(this, 'Fincan Çay')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>75 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Yeşil Çay</h2> 
+    <div class="rating" onclick="oyla(this, 'Yeşil Çay')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>75 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2> Ada Çayı</h2> 
+    <div class="rating" onclick="oyla(this, 'Ada Çayı')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>75 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Ihlamur Çayı</h2> 
+    <div class="rating" onclick="oyla(this, 'Ihlamur Çayı')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>75 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Kış Çayı</h2> 
+    <div class="rating" onclick="oyla(this, 'Kış Çayı')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>75 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Papatya Çayı</h2> 
+    <div class="rating" onclick="oyla(this, 'Papatya Çayı')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>75 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Melisa Çayı</h2> 
+    <div class="rating" onclick="oyla(this, 'Melisa Çayı')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>75 ₺</p>   
 </div>
 </div>
-    
+<script src="../js/rating.js"></script>
+
 
 <!-- FORM -->
 <div class="child_contact">
@@ -81,7 +123,6 @@
     <div class="social-icons">
         <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-        <!-- Diğer sosyal medya bağlantılarını ekleyebilirsiniz -->
     </div>
     <p>&copy; 2023 Cafe Nirvana. Tüm hakları saklıdır.</p>
 </div>

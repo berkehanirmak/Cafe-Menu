@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafe Bilgileri</title>
+</head>
+
+<body>
+    <h1>Kafe Bilgileri</h1>
+
+    <div id="cafe-info"></div>
+
+    <script>
+        const apiKey = 'API_KEY';
+        const cafeName = 'Cafe Nirvana'; 
+
+        
+        fetch(`https://maps.googleapis.com/maps/api/place/findplacefromtext/json?input=${cafeName}&inputtype=textquery&fields=name,formatted_address,opening_hours,rating,photos&key=${apiKey}`)
+            .then(response => response.json())
+            .then(data => {
+                const cafeInfoDiv = document.getElementById('cafe-info');
+
+                if (data.status === 'OK') {
+                    const cafe = data.candidates[0];
+                    cafeInfoDiv.innerHTML = `
+                        <p><strong>Adı:</strong> ${cafe.name}</p>
+                        <p><strong>Adres:</strong> ${cafe.formatted_address}</p>
+                        <p><strong>Açılış Saatleri:</strong> ${cafe.opening_hours ? cafe.opening_hours.weekday_text.join('<br>') : 'Bilgi Yok'}</p>
+                        <p><strong>Puan:</strong> ${cafe.rating || 'Bilgi Yok'}</p>
+                        <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${cafe.photos[0].photo_reference}&key=${apiKey}" alt="Kafe Resmi">
+                    `;
+                } else {
+                    cafeInfoDiv.innerHTML = '<p>Kafe bilgileri bulunamadı.</p>';
+                }
+            })
+            .catch(error => console.error('API çağrısı başarısız:', error));
+    </script>
+</body>
+
+</html>

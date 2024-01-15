@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milkshake</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/oneri.css">
+    <link rel="shortcut icon" href="../img/pp.jpeg" type="image/x-png">   
+
 
 </head>
 <body>
@@ -21,38 +24,67 @@
     <img src="../img/Milkshake.jpg" alt="">
 </div>
 
+<div class="oneri">
+    <h3>Günün Milkshake Önerisi</h3>
+    <button id="OneriBtn" onclick="rastgeleMilkshakeOnerisi()">Milkshake Önerisi Al</button>
+    <p id="milkshakeOnerisi"></p>
+</div>
+
+<script src="../js/oneri.js"></script>
 
 <div class="kategoriler">
     <div class="alt-kategoriler">
         <h2>Kavunlu</h2> 
+        <div class="rating" onclick="oyla(this, 'Kavunlu')">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+        </div>
         <p>125 ₺</p>   
    </div>
    <div class="alt-kategoriler">
-    <h2>Çikolatalı</h2> 
+    <h2>Çikolatalı</h2>
+    <div class="rating" onclick="oyla(this, 'Çikolatalı')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div> 
     <p>125 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Oreolu</h2> 
+    <div class="rating" onclick="oyla(this, 'Oreolu')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>125 ₺</p>   
 </div>
 <div class="alt-kategoriler">
-    <h2>Çilekli</h2> 
+    <h2>Çilekli</h2>
+    <div class="rating" onclick="oyla(this, 'Çilekli')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div> 
     <p>125 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Muzlu</h2> 
+    <div class="rating" onclick="oyla(this, 'Muzlu')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>125 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Vişneli</h2> 
+    <div class="rating" onclick="oyla(this, 'Vişneli')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>125 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Karadutlu</h2> 
+    <div class="rating" onclick="oyla(this, 'Karadutlu')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>125 ₺</p>   
 </div>
 </div>
-    
+<script src="../js/rating.js"></script>
+
 
 <!-- FORM -->
 <div class="child_contact">
@@ -73,7 +105,6 @@
     <div class="social-icons">
         <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-        <!-- Diğer sosyal medya bağlantılarını ekleyebilirsiniz -->
     </div>
     <p>&copy; 2023 Cafe Nirvana. Tüm hakları saklıdır.</p>
 </div>

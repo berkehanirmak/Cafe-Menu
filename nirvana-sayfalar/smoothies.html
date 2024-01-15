@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smoothies</title>
     <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/oneri.css">
+<link rel="shortcut icon" href="../img/pp.jpeg" type="image/x-png">   
 
 </head>
 <body>
@@ -21,54 +23,94 @@
     <img src="../img/smoothie.jpg" alt="">
 </div>
 
+<div class="oneri">
+    <h3>Günün Smoothie Önerisi</h3>
+    <button id="OneriBtn" onclick="rastgeleSmoothieOnerisi()">Smoothie Önerisi Al</button>
+    <p id="smoothieOnerisi"></p>
+</div>
+<script src="../js/oneri.js"></script>
 
 <div class="kategoriler">
     <div class="alt-kategoriler">
         <h2>Çilek</h2> 
+        <div class="rating" onclick="oyla(this, 'Çilek')">
+            <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+        </div>
         <p>110 ₺</p>   
    </div>
    <div class="alt-kategoriler">
     <h2>Böğürtlen</h2> 
+    <div class="rating" onclick="oyla(this, 'Böğürtlen')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>110 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Orman Meyveleri</h2> 
+    <div class="rating" onclick="oyla(this, 'Orman Meyveleri')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>110 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Kivi</h2> 
+    <div class="rating" onclick="oyla(this, 'Kivi')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>110 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Yeşil Elma</h2> 
+    <div class="rating" onclick="oyla(this, 'Yeşil Elma')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>110 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Karadut</h2> 
+    <div class="rating" onclick="oyla(this, 'Karadut')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>110 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Mango</h2> 
+    <div class="rating" onclick="oyla(this, 'Mango')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>110 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Kavun</h2> 
+    <div class="rating" onclick="oyla(this, 'Kavun')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>110 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Muz</h2> 
+    <div class="rating" onclick="oyla(this, 'Muz')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>110 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Vişne</h2> 
+    <div class="rating" onclick="oyla(this, 'Vişne')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>110 ₺</p>   
 </div>
 <div class="alt-kategoriler">
     <h2>Karpuz</h2> 
+    <div class="rating" onclick="oyla(this, 'Karpuz')">
+        <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
     <p>110 ₺</p>   
 </div>
 </div>
-    
+<script src="../js/rating.js"></script>
+
 
 <!-- FORM -->
 <div class="child_contact">
@@ -89,7 +131,6 @@
     <div class="social-icons">
         <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-        <!-- Diğer sosyal medya bağlantılarını ekleyebilirsiniz -->
     </div>
     <p>&copy; 2023 Cafe Nirvana. Tüm hakları saklıdır.</p>
 </div>
