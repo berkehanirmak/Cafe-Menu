@@ -1,4 +1,5 @@
-Home Page![Anasayfa](https://github.com/berkehanirmak/Cafe-Menu/assets/143714685/8d785642-5d47-433d-b641-bdabf7d09fff)
-
-Menu ![Ekran görüntüsü 2024-01-03 163131](https://github.com/berkehanirmak/Cafe-Menu/assets/143714685/bb3ee576-cf10-4613-9589-a9d49f27684b)
-Page![menuler](https://github.com/berkehanirmak/Cafe-Menu/assets/143714685/0270d1aa-e085-4371-ba1a-6f7e9e08d4ae)
+![photos1](https://github.com/berkehanirmak/Cafe-Menu/assets/143714685/bc5ee7ee-513c-4414-905e-55c7f949fe45)
+![photos2](https://github.com/berkehanirmak/Cafe-Menu/assets/143714685/4e42801b-3b36-4eed-92b0-ee2aed6d07bd)
+![photos4](https://github.com/berkehanirmak/Cafe-Menu/assets/143714685/158d8f38-c0e9-4542-9f66-d0ba2ad4ebbd)
+![photos6](https://github.com/berkehanirmak/Cafe-Menu/assets/143714685/f0c962d3-cbbc-4cc6-9c21-f499f4ebedc3)
+![photos7](https://github.com/berkehanirmak/Cafe-Menu/assets/143714685/eb675f13-bc98-4508-907b-038f0e43f96e)
